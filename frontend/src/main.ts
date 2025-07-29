@@ -479,7 +479,7 @@ class NailBitingDetector {
                 // Draw connections
                 this.drawingUtils.drawConnectors(
                     landmarks.map((l: any) => ({
-                        x: (l.x * canvasWidth) + 40,
+                        x: (l.x * canvasWidth) + 80,
                         y: (l.y * canvasHeight) + 180
                     })),
                     HandLandmarker.HAND_CONNECTIONS,
@@ -489,7 +489,7 @@ class NailBitingDetector {
                 // Draw landmarks
                 this.drawingUtils.drawLandmarks(
                     landmarks.map((l: any) => ({
-                        x: (l.x * canvasWidth) + 40,
+                        x: (l.x * canvasWidth) + 80,
                         y: (l.y * canvasHeight) + 180
                     })),
                     { color: '#FF0000', radius: 3 }
@@ -500,7 +500,7 @@ class NailBitingDetector {
                     const fingertip = landmarks[fingertipIndex];
                     this.overlayContext.beginPath();
                     this.overlayContext.arc(
-                        (fingertip.x * canvasWidth) + 40,
+                        (fingertip.x * canvasWidth) + 80,
                         (fingertip.y * canvasHeight) + 180,
                         3,
                         0,
@@ -519,7 +519,7 @@ class NailBitingDetector {
             
             this.overlayContext.beginPath();
             this.overlayContext.arc(
-                (faceCenter.x * canvasWidth) + 40,
+                (faceCenter.x * canvasWidth) + 80,
                 (faceCenter.y * canvasHeight) + 180,
                 5,
                 0,
